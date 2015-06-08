@@ -1,0 +1,15 @@
+{
+  "name": "beeter",
+  "version": "1.0.0",
+  "description": "Dating for Nerds/Geeks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Gunnar Halen",
+    "license": "ISC",
+    "dependencies": {
+      "handlebars": "^3.0.3",
+      "hapi": "^8.6.0"
+    }
+  }

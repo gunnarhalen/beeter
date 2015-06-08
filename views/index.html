@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+	<meta charset="utf-8">
+	<!-- If you delete this meta tag World War Z will become a reality -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beeter</title>
+
+	<!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/foundation.css">
+
+	<!-- If you are using the gem version, you need this only -->
+	<link rel="stylesheet" href="assets/css/app.css">
+
+
+
+</head>
+<body class="home">
+	
+	<div class="row logo-index">
+
+		<div class="small-12 column small-centered text-center">
+			<object data="assets/img/beeter_logo.svg" type="image/svg+xml" width="200">
+			</object>
+			
+
+			<p class="super-titles">
+				Encontre <span class="typed"></span>
+			</p>
+
+			<a href="entrar" class="button login">login</a> <a href="cadastrar" class="button signup">cadastro</a>
+		</div>
+
+	</div>	
+
+	<script src="assets/js/vendor/jquery.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="assets/js/particles.js"></script>
+
+	<script src="assets/js/typed.js"></script>
+
+	<script>
+		$(function(){
+			$(".typed").typed({
+				strings: [
+				"^500seu ^200<span>nerd!</span>",
+				"^500sua ^200<span>geek!</span>",
+				"^500sua ^200<span>nerd!</span>",
+				"^500seu ^200<span>geek!</span>"
+				],
+				typeSpeed: 80,
+				startDelay: 200,
+				backSpeed: 100,
+				backDelay: 800,
+				showCursor: true,
+				cursorChar: "|",
+				loop: true
+			});
+		});
+	</script>
+		<script src="assets/js/vendor/modernizr.js"></script>
+
+</body>
+</html>

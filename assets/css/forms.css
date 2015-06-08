@@ -1,0 +1,89 @@
+input[type="text"].singleform,
+input[type="password"].singleform,
+input[type="date"].singleform,
+input[type="datetime"].singleform,
+input[type="datetime-local"].singleform,
+input[type="month"].singleform,
+input[type="week"].singleform,
+input[type="email"].singleform,
+input[type="number"].singleform,
+input[type="search"].singleform,
+input[type="tel"].singleform,
+input[type="time"].singleform,
+input[type="url"].singleform,
+input[type="color"].singleform,
+textarea {
+  font-family:'AvenirNextLTPro' !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #360963;
+  border-width: 0;
+  box-shadow: none;
+  color: #FFF;
+  display: block;
+  font-family: inherit;
+  font-size: 2rem;
+  height: auto;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+  -moz-transition: border-color 0.15s linear, background 0.15s linear;
+  -ms-transition: border-color 0.15s linear, background 0.15s linear;
+  -o-transition: border-color 0.15s linear, background 0.15s linear;
+  transition: border-color 0.15s linear, background 0.15s linear;
+}
+input[type="text"].singleform:focus,
+input[type="password"].singleform:focus,
+input[type="date"].singleform:focus,
+input[type="datetime"].singleform:focus,
+input[type="datetime-local"].singleform:focus,
+input[type="month"].singleform:focus,
+input[type="week"].singleform:focus,
+input[type="email"].singleform:focus,
+input[type="number"].singleform:focus,
+input[type="search"].singleform:focus,
+input[type="tel"].singleform:focus,
+input[type="time"].singleform:focus,
+input[type="url"].singleform:focus,
+input[type="color"].singleform:focus,
+textarea:focus {
+  background: #360963;
+  border-color: #999999;
+  outline: none;
+}
+input[type="text"].singleform:disabled,
+input[type="password"].singleform:disabled,
+input[type="date"].singleform:disabled,
+input[type="datetime"].singleform:disabled,
+input[type="datetime-local"].singleform:disabled,
+input[type="month"].singleform:disabled,
+input[type="week"].singleform:disabled,
+input[type="email"].singleform:disabled,
+input[type="number"].singleform:disabled,
+input[type="search"].singleform:disabled,
+input[type="tel"].singleform:disabled,
+input[type="time"].singleform:disabled,
+input[type="url"].singleform:disabled,
+input[type="color"].singleform:disabled,
+textarea.singleform:disabled {
+  background-color: #DDDDDD;
+  cursor: default;
+}
+.error small.error {
+  display: block;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  margin-top: -1px;
+  padding: 0px;
+  background: #F23568;
+  color: #FFFFFF;
+}

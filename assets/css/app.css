@@ -1,0 +1,343 @@
+body, html {
+  font-family: 'PT Sans', sans-serif;
+  color: #555;
+}
+
+body.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/geek_couple.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+  font-family:'AvenirNextLTPro';
+  src:url(../fonts/avenirnextltpro-regular.eot);
+  src:url(../fonts/avenirnextltpro-regular.eot) format(embedded-opentype),
+  url(../fonts/avenirnextltpro-regular.woff) format("woff"),
+  url(../fonts/avenirnextltpro-regular.ttf) format("truetype"),
+  url(../fonts/avenirnextltpro-regular.svg#AvenirNextLTProRegular) format(svg);
+  font-style:normal;
+  font-weight:400
+}
+
+@font-face {
+  font-family:'AvenirNextLTPro';
+  src:url(../fonts/avenirnextltpro-medium.eot);
+  src:url(../fonts/avenirnextltpro-medium.eot) format(embedded-opentype),
+  url(../fonts/avenirnextltpro-medium.woff) format("woff"),
+  url(../fonts/avenirnextltpro-medium.ttf) format("truetype"),
+  url(../fonts/avenirnextltpro-medium.svg#AvenirNextLTProMedium) format(svg);
+  font-style:normal;
+  font-weight:500
+}
+
+@font-face {
+  font-family:'AvenirNextLTPro';
+  src:url(../fonts/avenirnextltpro-demi.eot);
+  src:url(../fonts/avenirnextltpro-demi.eot) format(embedded-opentype),
+  url(../fonts/avenirnextltpro-demi.woff) format("woff"),
+  url(../fonts/avenirnextltpro-demi.ttf) format("truetype"),
+  url(../fonts/avenirnextltpro-demi.svg#AvenirNextLTProDemi) format(svg);
+  font-style:normal;
+  font-weight:600
+}
+
+@font-face {
+  font-family:'AvenirNextLTPro';
+  src:url(../fonts/avenirnextltpro-bold.eot);
+  src:url(../fonts/avenirnextltpro-bold.eot) format(embedded-opentype),
+  url(../fonts/avenirnextltpro-bold.woff) format("woff"),
+  url(../fonts/avenirnextltpro-bold.ttf) format("truetype"),
+  url(../fonts/avenirnextltpro-bold.svg#AvenirNextLTProBold) format(svg);
+  font-style:normal;
+  font-weight:700
+}
+
+.logo-index {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  bottom: 200px;
+  margin-left: -250px;
+}
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-moz-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.super-titles {
+  font-family:'AvenirNextLTPro';
+  font-size: 3rem;
+  color: #FFF;
+}
+
+.super-titles span {
+  font-weight: 700;
+}
+
+.error-page {
+  color: #FFF;
+  position: absolute;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 50%;
+  left: -150px;
+  text-align: center;
+}
+
+.error-page h3 {
+  color: #FFF;
+}
+
+.login-form-wrap {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50%;
+  left: -150px;
+  text-align: center;
+}
+
+.login-form-wrap a {
+  color: #FFF;
+}
+.login-form-wrap a:hover {
+  text-decoration: underline;
+}
+
+.login-form {
+  background: #FFF;
+  padding: 30px 30px 0 30px;
+  margin: 30px 0 10px 0;
+  width: 300px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+button, .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family:'AvenirNextLTPro' !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: .7rem 3rem .7625rem 3rem;
+  font-size: 1rem;
+  background-color: #008CBA;
+  border-color: #007095;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #007095;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+  color: #FFFFFF;
+}
+button.login, .button.login {
+  background-color: #89c64b;
+  border-color: #b9b9b9;
+  color: #FFF;
+}
+button.login:hover, button.login:focus, .button.login:hover, .button.login:focus {
+  background-color: #91db46;
+  color: #FFF;
+}
+button.signup, .button.signup {
+  background-color: #167eff;
+  border-color: #b9b9b9;
+  color: #FFF;
+}
+button.signup:hover, button.signup:focus, .button.signup:hover, .button.signup:focus {
+  background-color: #328cfb;
+  color: #FFF;
+}
+button.facebook, .button.facebook {
+  font-size: .7rem;
+  background-color: #3B5998;
+  border-color: #b9b9b9;
+  color: #FFF;
+}
+button.facebook:hover, button.facebook:focus, .button.facebook:hover, .button.facebook:focus {
+  background-color: #328cfb;
+  color: #FFF;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type="text"].singleform, input[type="password"].singleform, input[type="date"].singleform, input[type="datetime"].singleform, input[type="datetime-local"].singleform, input[type="month"].singleform, input[type="week"].singleform, input[type="email"].singleform, input[type="number"].singleform, input[type="search"].singleform, input[type="tel"].singleform, input[type="time"].singleform, input[type="url"].singleform, input[type="color"].singleform, textarea {
+  font-family:'AvenirNextLTPro' !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #EEE;
+  border-width: 0;
+  box-shadow: none;
+  color: #360963;
+  display: block;
+  font-size: 1rem;
+  height: auto;
+  padding: 1rem 1rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+  -moz-transition: border-color 0.15s linear, background 0.15s linear;
+  -ms-transition: border-color 0.15s linear, background 0.15s linear;
+  -o-transition: border-color 0.15s linear, background 0.15s linear;
+  transition: border-color 0.15s linear, background 0.15s linear;
+}
+input[type="text"].singleform:focus, input[type="password"].singleform:focus, input[type="date"].singleform:focus, input[type="datetime"].singleform:focus, input[type="datetime-local"].singleform:focus, input[type="month"].singleform:focus, input[type="week"].singleform:focus, input[type="email"].singleform:focus, input[type="number"].singleform:focus, input[type="search"].singleform:focus, input[type="tel"].singleform:focus, input[type="time"].singleform:focus, input[type="url"].singleform:focus, input[type="color"].singleform:focus, textarea:focus {
+  background: #360963;
+  color: #FFF;
+}
+
+.error small.error {
+  display: block;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: -1px;
+  padding: 0px;
+  background: #F23568;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+
+section.menu {
+  background: #FFF;
+  height: 60px;
+}
+
+section.profile-header {
+  background: #221b32 url('../img/profile-bg.png');
+  padding: 80px 0;
+}
+
+.avatar-profile {
+  background: #FFF url('http://m.dreamscity.net/imgcache/2/22828dreamscity.jpg');
+  background-size: 100% 100%;
+  height: 150px;
+  width: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+}
+
+section.profile-bio {
+  background: #FFF;
+  padding: 50px 0;
+}
+
+section.profile-bio ul {
+  margin-left: 0;
+  list-style: none;
+}
+
+section.footer {
+  background: #ffd800;
+  padding: 50px 0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #221b32;
+  /*background-color: #BF3751;*/
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.tag-container {
+  font-family: 'PT Sans', sans-serif;
+  text-align: right;
+}
+.tag-container p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.tag-container a {
+  font-size: .9rem;
+  color: #FFF;
+  text-decoration: none;
+  padding: 3px 12px 5px 12px;
+  margin-bottom: 4px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.tag-container a:hover {
+}
+.tag-series a {
+  background: #664697;
+}
+.tag-series p {
+  color: #664697;
+}
+.tag-movies a {
+  background: #6eb4ef;
+}
+.tag-movies p {
+  color: #6eb4ef;
+}
+.tag-games a {
+  background: #a8d243;
+}
+.tag-games p {
+  color: #a8d243;
+}
+.tag-music a {
+  background: #de3a87;
+}
+.tag-music p {
+  color: #de3a87;
+}

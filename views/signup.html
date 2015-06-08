@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+	<meta charset="utf-8">
+	<!-- If you delete this meta tag World War Z will become a reality -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beeter</title>
+
+	<!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/foundation.css">
+
+	<!-- If you are using the gem version, you need this only -->
+	<link rel="stylesheet" href="assets/css/app.css">
+
+	<script src="assets/js/vendor/modernizr.js"></script>
+
+</head>
+<body>
+
+	<div id="particles-js">
+		<div class="login-form-wrap">
+			<object data="assets/img/beeter_logo.svg" type="image/svg+xml" width="200">
+			</object>
+			<div class="login-form">
+				<h4>Hey! Vamos começar!</h4>
+				<form id="signin" name="signin" method="POST" action="checklogin.php" data-abide>
+					<input class="singleform" placeholder="Nome de usuário" name="myusername" type="text" id="myusername" required>
+					<small class="error">Insira um e-mail válido.</small>
+					<input class="singleform" placeholder="E-mail" name="myemail" type="email" id="myemail" required>
+					<small class="error">Insira um e-mail válido.</small>
+					<input class="singleform" placeholder="Senha" name="mypassword" type="password" id="mypassword" required>
+					<small class="error">Insira sua senha.</small>
+					<button class="button login" type="submit" form="signin" value="Submit">Criar Conta</button>
+				</form>
+			</div>
+			<a href="entrar">Já tenho uma conta</a>
+		</div>
+	</div>
+
+	<script src="assets/js/vendor/jquery.js"></script>
+	<script src="assets/js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="assets/js/particles.js"></script>
+
+	<script src="assets/js/typed.js"></script>
+
+	<script>
+		$(function(){
+			$(".typed").typed({
+				strings: [
+				"^500seu ^200<span>nerd!</span>",
+				"^500sua ^200<span>geek!</span>",
+				"^500sua ^200<span>nerd!</span>",
+				"^500seu ^200<span>geek!</span>"
+				],
+				typeSpeed: 80,
+				startDelay: 200,
+				backSpeed: 100,
+				backDelay: 800,
+				showCursor: true,
+				cursorChar: "|",
+				loop: true
+			});
+		});
+	</script>
+
+</body>
+</html>
