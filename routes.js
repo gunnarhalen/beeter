@@ -36,6 +36,13 @@ module.exports = [
 },
 {
     method: 'GET',
+    path: '/explorar',
+    handler: function (request, reply) {
+        return reply.view('explore');
+    }
+},
+{
+    method: 'GET',
     path: '/perfil',
     handler: function (request, reply) {
         return reply.view('profile');
