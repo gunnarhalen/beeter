@@ -253,6 +253,7 @@ input[type="text"].singleform:focus, input[type="password"].singleform:focus, in
 .contain-to-grid .top-bar {
   margin-bottom: 0;
   background: #FFF;
+  z-index: 2;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
@@ -294,13 +295,17 @@ input[type="text"].singleform:focus, input[type="password"].singleform:focus, in
   background: #FFF;
 }
 
+.top-bar.expanded .title-area {
+  background: #FFF;
+}
+
 section.menu ul {
   margin: 0 !important;
   list-style: none;
 }
 
 section.profile-header {
-  background: #221b32 url('../img/profile-bg.png');
+  background: #221b32 url('../img/profile-bg.png') center center;
   padding: 80px 0;
 }
 
