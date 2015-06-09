@@ -20,13 +20,34 @@
 </head>
 <body>
 
-	<section class="menu">
-		<div class="row">
-			<div class="small-12 column">
-				menu
-			</div>
-		</div>
-	</section>
+	<div class="contain-to-grid sticky">
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#">Beeter</a></h1>
+				</li>
+				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li><a href="#">Explorar</a></li>
+					<li><a href="#">Mensagens</a></li>
+					<li><a href="#">Favoritos</a></li>
+					<li class="has-dropdown">
+						<a href="#">nomedousuário</a>
+						<ul class="dropdown">
+							<li><a href="#">Perfil</a></li>
+							<li><a href="#">Preferências</a></li>
+							<li><a href="#">Sair</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</section>
+		</nav>
+	</div>
 
 	<section class="profile-header">
 		<div class="row">
