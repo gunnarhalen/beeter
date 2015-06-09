@@ -252,46 +252,8 @@ section.menu {
 
 section.menu ul {
   margin: 0 !important;
-}
-
-dropdown ul, dropdown label {
-  margin: 0 !important;
   list-style: none;
-  background: #FFF;
-  width: 200px;
 }
-dropdown label {
-  font-size: 1rem;
-  position: relative;
-  z-index: 2;
-}
-dropdown input {
-  display: none;
-}
-dropdown input ~ ul {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  top: -5px;
-  z-index: 1;
-}
-dropdown input:checked ~ ul {
-  visibility: visible;
-  opacity: 1;
-  top: 30px;
-}
-.animate {
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-}
-
 
 section.profile-header {
   background: #221b32 url('../img/profile-bg.png');
