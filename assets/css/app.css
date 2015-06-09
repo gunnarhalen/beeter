@@ -244,10 +244,54 @@ input[type="text"].singleform:focus, input[type="password"].singleform:focus, in
   border-radius: 0 0 3px 3px;
 }
 
-section.menu {
+.contain-to-grid {
+  width: 100%;
   background: #FFF;
-  border-bottom: 1px #EFEFEF solid;
-  padding: 25px;
+  border-bottom: solid 1px #EEE;
+  height: 60px;
+}
+.contain-to-grid .top-bar {
+  margin-bottom: 0;
+  background: #FFF;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #FFF;
+  padding: 7px 0.9375rem;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #FFF;
+  color: #555;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  background: #FFF;
+  color: #555;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+  background-color: #EEE;
+  color: #555;
+  background: #EEE;
+}
+
+.top-bar-section ul li > a {
+  color: #555;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  padding-left: 0.9375rem;
+  padding: 12px 0 12px 0.9375rem;
+  text-transform: none;
+  width: 100%;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a {
+  background-color: #FFF;
+  color: #555;
+  background: #FFF;
 }
 
 section.menu ul {
@@ -353,27 +397,28 @@ canvas {
   color: #de3a87;
 }
 .user-card {
-  position: relative;
-  background: url('http://m.dreamscity.net/imgcache/2/22828dreamscity.jpg') 100%;
-  height: 200px;
-  width: 200px;
   overflow: hidden;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  float: left;
-  margin: 0 20px 20px 0;
+  margin-bottom: 25px;
+}
+.user-card-avatar {
+  background: url('http://m.dreamscity.net/imgcache/2/22828dreamscity.jpg');
+  background-size: cover;
+  height: 200px;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 .user-card-status {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 25px;
   background: #0F0;
   height: 10px;
   width: 10px;
-  -webkit-border-radius: 50%;
+  -webkit-border-radius: 49%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  z-index: 1;
 }
 .user-card-status.offline {
   background: #ff4646;
@@ -388,19 +433,18 @@ canvas {
   font-size: .7rem;
 }
 .user-card-infos {
-  position: absolute;
-  bottom: 0;
   background: #42225d;
   color: #FFF;
-  height: 40px;
-  width: 100%;
   padding: 10px 15px;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
 .user-card-infos .user {
-  display: inline-block;
+  display: block;
 }
 .user-card-infos .city {
-  display: inline-block;
+  display: block;
   font-style: italic;
   font-size: .8rem;
 }
