@@ -50,9 +50,9 @@ module.exports = [
 },
 {
     method: 'GET',
-    path: '/editar',
+    path: '/favoritos',
     handler: function (request, reply) {
-        return reply.view('edit-profile');
+        return reply.view('favourites');
     }
 }
 ];
