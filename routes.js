@@ -47,5 +47,12 @@ module.exports = [
     handler: function (request, reply) {
         return reply.view('profile');
     }
+},
+{
+    method: 'GET',
+    path: '/editar',
+    handler: function (request, reply) {
+        return reply.view('edit-profile');
+    }
 }
 ];

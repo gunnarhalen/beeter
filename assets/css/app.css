@@ -1,5 +1,5 @@
 body, html {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #555;
 }
 
@@ -10,6 +10,8 @@ body.home {
   -o-background-size: cover;
   background-size: cover;
 }
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 @font-face {
   font-family:'AvenirNextLTPro';
@@ -266,6 +268,11 @@ input[type="text"].singleform:focus, input[type="password"].singleform:focus, in
   color: #555;
 }
 
+.top-bar-section .dropdown {
+  border: #eee solid;
+  border-width: 0 1px 1px 1px;
+}
+
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #FFF;
   color: #555;
@@ -280,8 +287,8 @@ input[type="text"].singleform:focus, input[type="password"].singleform:focus, in
 .top-bar-section ul li > a {
   color: #555;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 0.8125rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   font-weight: normal;
   padding-left: 0.9375rem;
   padding: 12px 0 12px 0.9375rem;
@@ -289,9 +296,15 @@ input[type="text"].singleform:focus, input[type="password"].singleform:focus, in
   width: 100%;
 }
 
+.top-bar .toggle-topbar.menu-icon a span::after {
+  width: 25px;
+  top: 22px;
+  box-shadow: 0 0 0 1px #555, 0 8px 0 1px #555, 0 16px 0 1px #555;
+}
+
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: #FFF;
   color: #555;
+  background-color: #555;
   background: #FFF;
 }
 
@@ -357,8 +370,12 @@ canvas {
 }
 
 .tag-container {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: right;
+  margin-bottom: 15px;
+}
+.tag-container:last-of-type {
+  margin-bottom: 0;
 }
 .tag-container p {
   font-size: 1.2rem;
