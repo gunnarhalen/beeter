@@ -20,123 +20,126 @@
 </head>
 <body>
 
-	<div class="contain-to-grid sticky">
-		<nav class="top-bar" data-topbar role="navigation">
-			<ul class="title-area">
-				<li class="name">
-					<h1><a href="#">Beeter</a></h1>
-				</li>
-				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-			</ul>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<nav class="tab-bar">
+				<section class="left-small">
+					<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+				</section>
+				<section class="middle tab-bar-section">
+					<span class="tab-bar-logo">
+						<object data="assets/img/beeter_logo_yellow.svg" type="image/svg+xml" width="100">
+						</object>
+					</span>
+				</section>
+			</nav>
 
-			<section class="top-bar-section">
-				<!-- Right Nav Section -->
-				<ul class="right">
-					<li><a href="explorar">Explorar</a></li>
-					<li><a href="mensagens">Mensagens</a></li>
-					<li><a href="favoritos">Favoritos</a></li>
-					<li class="has-dropdown">
-						<a href="#">carolbastos</a>
-						<ul class="dropdown">
-							<li><a href="perfil">Perfil</a></li>
-							<li><a href="preferencias">Preferências</a></li>
-							<li><a href="logout">Sair</a></li>
-						</ul>
-					</li>	
+			<aside class="left-off-canvas-menu">
+				<ul class="off-canvas-list">
+					<li><label>Menu</label></li>
+					<li><a href="#">Explorar</a></li>
+					<li><a href="#">Mensagens</a></li>
+					<li><a href="#">Favoritos</a></li>
+					<li><a href="#">Preferências</a></li>
+					<li><a href="#">Sair</a></li>
+
 				</ul>
+			</aside>
+
+			<section class="main-section">
+
+				<section class="profile-header">
+					<div class="row">
+						<div class="small-12 column">
+							<div class="avatar-profile column small-centered"></div>
+							<div class="column text-center small-centered">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="profile-bio">
+					<div class="row">
+						<div class="small-12 large-8 column">
+							<h3>carolbastos, 19</h3>
+							<p><i>Rio de Janeiro - RJ</i></p>
+							<b>Descrição</b>
+							<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. (máx 420 caracteres)</p>
+
+							<b>Detalhes</b>
+							<ul>
+								<li><b>Status</b> Solteiro(a)</li>
+								<li><b>Interesse</b> Relacionamento sério,</li>
+								<li><b>Profissão</b> Designer</li>
+								<li><b>Altura</b> 165cm</li>
+								<li><b>Olhos</b> Castanhos</li>
+								<li><b>Cabelo</b> Castanhos</li>
+								<li><b>Cigarro</b> Não</li>
+								<li><b>Bebida</b> Socialmente</li>
+								<li><b>Hobbies</b> Cozinhar, barzinho, viajar, dançar</li>
+							</ul>
+							<a href="#">Bloquear</a> | <a href="#">Denunciar</a>
+						</div>
+						<div class="small-12 large-4 column">
+							<div class="tag-container tag-series">
+								<p>Séries de TV</p>
+								<a href="#">Game of Thrones</a>
+								<a href="#">Daredevil</a>
+								<a href="#">House of Cards</a>
+								<a href="#">Big Bang Theory</a>
+								<a href="#">How I Meet Your Mother</a>
+								<a href="#">Arrow</a>
+							</div>
+
+							<div class="tag-container tag-movies">
+								<p>Filmes</p>
+								<a href="#">Star Wars</a>
+								<a href="#">De Volta Para o Futuro</a>
+								<a href="#">Godfather</a>
+								<a href="#">Homem de Ferro</a>
+								<a href="#">Curtindo a Vida Adoidado</a>
+								<a href="#">Kick-ass</a>
+							</div>
+
+							<div class="tag-container tag-games">
+								<p>Jogos</p>
+								<a href="#">God of War</a>
+								<a href="#">Destiny</a>
+								<a href="#">Super Mario World</a>
+								<a href="#">Skyrim</a>
+								<a href="#">Diablo 3</a>
+								<a href="#">Angry Birds</a>
+							</div>
+
+							<div class="tag-container tag-music">
+								<p>Música</p>
+								<a href="#">Guns n' Roses</a>
+								<a href="#">Muse</a>
+								<a href="#">Green Day</a>
+								<a href="#">Eminem</a>
+								<a href="#">Florence and The Machine</a>
+								<a href="#">AC/DC</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="footer">
+					<div class="row">
+						<div class="small-12 column">
+							<a href="#">Sobre o Beeter</a>
+							<a href="#">Termos de uso</a>
+							<a href="#">Política de privacidade</a>
+							<a href="#">Perguntas frequêntes</a>
+						</div>
+					</div>
+				</section>
 			</section>
-		</nav>
+
+			<a class="exit-off-canvas"></a>
+
+		</div>
 	</div>
-
-	<section class="profile-header">
-		<div class="row">
-			<div class="small-12 column">
-				<div class="avatar-profile column small-centered"></div>
-				<div class="column text-center small-centered">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="profile-bio">
-		<div class="row">
-			<div class="small-12 large-8 column">
-				<h3>carolbastos, 19</h3>
-				<p><i>Rio de Janeiro - RJ</i></p>
-				<b>Descrição</b>
-				<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. (máx 420 caracteres)</p>
-
-				<b>Detalhes</b>
-				<ul>
-					<li><b>Status</b> Solteiro(a)</li>
-					<li><b>Interesse</b> Relacionamento sério,</li>
-					<li><b>Profissão</b> Designer</li>
-					<li><b>Altura</b> 165cm</li>
-					<li><b>Olhos</b> Castanhos</li>
-					<li><b>Cabelo</b> Castanhos</li>
-					<li><b>Cigarro</b> Não</li>
-					<li><b>Bebida</b> Socialmente</li>
-					<li><b>Hobbies</b> Cozinhar, barzinho, viajar, dançar</li>
-				</ul>
-			</div>
-			<div class="small-12 large-4 column">
-				<div class="tag-container tag-series">
-					<p>Séries de TV</p>
-					<a href="#">Game of Thrones</a>
-					<a href="#">Daredevil</a>
-					<a href="#">House of Cards</a>
-					<a href="#">Big Bang Theory</a>
-					<a href="#">How I Meet Your Mother</a>
-					<a href="#">Arrow</a>
-				</div>
-
-				<div class="tag-container tag-movies">
-					<p>Filmes</p>
-					<a href="#">Star Wars</a>
-					<a href="#">De Volta Para o Futuro</a>
-					<a href="#">Godfather</a>
-					<a href="#">Homem de Ferro</a>
-					<a href="#">Curtindo a Vida Adoidado</a>
-					<a href="#">Kick-ass</a>
-				</div>
-
-				<div class="tag-container tag-games">
-					<p>Jogos</p>
-					<a href="#">God of War</a>
-					<a href="#">Destiny</a>
-					<a href="#">Super Mario World</a>
-					<a href="#">Skyrim</a>
-					<a href="#">Diablo 3</a>
-					<a href="#">Angry Birds</a>
-				</div>
-
-				<div class="tag-container tag-music">
-					<p>Música</p>
-					<a href="#">Guns n' Roses</a>
-					<a href="#">Muse</a>
-					<a href="#">Green Day</a>
-					<a href="#">Eminem</a>
-					<a href="#">Florence and The Machine</a>
-					<a href="#">AC/DC</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="footer">
-		<div class="row">
-			<div class="small-12 column">
-				<ul class="inline-list">
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-					<li><a href="#">Link 5</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
 
 	<script src="assets/js/vendor/jquery.js"></script>
 	<script src="assets/js/foundation.min.js"></script>

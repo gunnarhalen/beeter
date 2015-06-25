@@ -66,7 +66,27 @@
 			});
 		});
 	</script>
-		<script src="assets/js/vendor/modernizr.js"></script>
+	<script>
+		var kkeys = [],
+		konami = "38,38,40,40,37,39,37,39,66,65";
+
+		$(document).keydown(function(e) {
+
+			kkeys.push(e.keyCode);
+
+			if (kkeys.toString().indexOf(konami) >= 0) {
+
+				$(document).unbind('keydown', arguments.callee);
+
+    // do something awesome
+    $("body").append("<div style='position:absolute; bottom:0;width:100%;'><marquee scrollamount='30' loop='1' direction='right'><img src='assets/img/run-mario-run.gif' /></marquee></div>");
+
+}
+
+});
+
+	</script>
+	<script src="assets/js/vendor/modernizr.js"></script>
 
 </body>
 </html>
