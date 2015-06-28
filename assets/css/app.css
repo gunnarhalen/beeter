@@ -326,6 +326,11 @@ section.profile-bio {
   padding: 50px 0;
 }
 
+section.profile-bio h3 {
+  color: #664697;
+  line-height: 1rem;
+}
+
 section.profile-bio ul {
   margin-left: 0;
   list-style: none;
