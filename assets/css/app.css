@@ -280,11 +280,15 @@ input[type="text"].singleform:focus, input[type="password"].singleform:focus, in
 
 ul.off-canvas-list li a {
   color: #FFF;
+  padding: 1.2rem 1rem;
   border-bottom: none;
+  border-left: 4px solid #00FF99;
+  font-size: .9rem;
 }
 
 ul.off-canvas-list li a:hover {
   background: #181026;
+  border-left: 4px solid #ff4444;
 }
 
 ul.off-canvas-list li label {
@@ -309,6 +313,12 @@ section.profile-header {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  transition: 200ms;
+}
+
+.avatar-profile:hover {
+  height: 170px;
+  width: 170px;
 }
 
 section.profile-bio {
