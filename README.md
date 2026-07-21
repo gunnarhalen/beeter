@@ -1,3 +1,3 @@
 # Beeter
 
-Nerd/Geek social network and dating site.
+Nerd and Geek social network and dating site.
