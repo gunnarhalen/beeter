@@ -1,3 +1,3 @@
 # Beeter
 
-Nerd and Geek social network and dating site.
+Comunidade cristã de encontros, discipulado e relacionamentos sérios baseados em valores bíblicos.
