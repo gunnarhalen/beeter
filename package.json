@@ -1,7 +1,7 @@
 {
   "name": "beeter",
   "version": "1.0.0",
-  "description": "Dating for Nerds/Geeks",
+  "description": "Comunidade Cristã de Encontros e Discipulado",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

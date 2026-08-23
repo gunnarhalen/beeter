@@ -54,5 +54,12 @@ module.exports = [
     handler: function (request, reply) {
         return reply.view('favourites');
     }
+},
+{
+    method: 'GET',
+    path: '/pricing',
+    handler: function (request, reply) {
+        return reply.view('pricing');
+    }
 }
 ];
