@@ -507,7 +507,7 @@ canvas {
   transform: translateY(-5px);
 }
 
-.pricing-card.free {
+.pricing-card.basic {
   border: 2px solid #e0e0e0;
 }
 
