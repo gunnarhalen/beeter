@@ -4,12 +4,15 @@
   "description": "Dating for Nerds/Geeks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Gunnar Halen",
-    "license": "ISC",
-    "dependencies": {
-      "handlebars": "^3.0.3",
-      "hapi": "^8.6.0"
-    }
+    "test": "mocha"
+  },
+  "author": "Gunnar Halen",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^3.0.3",
+    "hapi": "^8.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
   }
+}

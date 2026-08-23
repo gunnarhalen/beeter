@@ -1,4 +1,11 @@
+var healthcheckHandler = require('./handlers/healthcheck');
+
 module.exports = [
+{
+    method: 'GET',
+    path: '/healthcheck',
+    handler: healthcheckHandler
+},
 {
     method: 'GET',
     path: '/assets/{file*}',
