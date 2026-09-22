@@ -1,17 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 body, html {
   font-family: 'Roboto', sans-serif;
   color: #555;
 }
 
 body.home {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/geek_couple.jpg) no-repeat center center fixed; 
+  background: linear-gradient(rgba(17, 12, 27, 0.55), rgba(17, 12, 27, 0.55)), url(../img/geek_couple.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 @font-face {
   font-family:'AvenirNextLTPro';
@@ -57,12 +57,45 @@ body.home {
   font-weight:700
 }
 
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 4rem 1.25rem;
+  text-align: center;
+}
+
 .logo-index {
-  position: absolute;
-  width: 500px;
-  left: 50%;
-  bottom: 200px;
-  margin-left: -250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 32rem;
+  animation: hero-in 600ms ease-out both;
+}
+
+.logo-index object {
+  width: min(200px, 55vw);
+  height: auto;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.home-actions .button {
+  margin: 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .typed-cursor{
@@ -92,8 +125,12 @@ body.home {
 
 .super-titles {
   font-family:'AvenirNextLTPro';
-  font-size: 3rem;
+  font-size: clamp(1.75rem, 6vw, 3rem);
+  line-height: 1.15;
   color: #FFF;
+  margin: 0;
+  text-wrap: balance;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .35);
 }
 
 .super-titles span {
@@ -472,4 +509,47 @@ canvas {
   display: block;
   font-style: italic;
   font-size: .8rem;
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+button:focus-visible,
+.button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #ffd800;
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 40em) {
+  .home-hero {
+    padding: 3rem 1rem;
+  }
+  .home-actions {
+    flex-direction: column;
+  }
+  .home-actions .button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-index {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .typed-cursor {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
