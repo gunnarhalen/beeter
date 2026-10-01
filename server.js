@@ -3,6 +3,11 @@ var Hapi = require('hapi');
 var server = new Hapi.Server();
 server.connection({ port: 3000 });
 
+server.ext('onRequest', function (request, reply) {
+	console.log('[' + request.method.toUpperCase() + '] ' + request.path);
+	return reply.continue();
+});
+
 server.route(require('./routes'));
 
 server.views({
