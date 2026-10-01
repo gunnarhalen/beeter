@@ -7,6 +7,13 @@ module.exports = [
     }
 },
 {
+    method: 'GET',
+    path: '/health',
+    handler: function (request, reply) {
+        return reply({ status: 'ok' });
+    }
+},
+{
     method: '*',
     path: '/{p*}', // catch-all path
     handler: function (request, reply) {
